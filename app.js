@@ -38,4 +38,4 @@ app.get("/work", (req, res) =>
     res.render("list", {listTitle : work, newListItem: workItems} )
 });
 
-app.listen(3000, console.log("Server started at port 3000"));
+app.listen(process.env.port|| 3000, console.log("Server started at port 3000"));
